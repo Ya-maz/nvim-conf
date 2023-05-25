@@ -28,6 +28,17 @@ local enable_format_on_save = function(_, bufnr)
     })
 end
 
+-- Run gofmt on save
+
+local format_sync_grp = vim.api.nvim_create_augroup("GoFormat", {})
+vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = "*.go",
+    callback = function()
+        require('go.format').gofmt()
+    end,
+    group = format_sync_grp,
+})
+
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
