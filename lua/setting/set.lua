@@ -31,5 +31,4 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 --paste clipboard for lixux os
-vim.opt.clipboard: prepend {'unnamed', 'unnamedplus'}
-
+vim.opt.clipboard:prepend { 'unnamed', 'unnamedplus' }

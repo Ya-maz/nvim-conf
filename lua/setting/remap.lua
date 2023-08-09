@@ -16,6 +16,8 @@ vim.keymap.set('n', 'te', ':tabedit')
 -- Split window
 vim.keymap.set('n', 'ss', ':split<Return><C-w>w')
 vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
+vim.keymap.set('n', 'st', ':vsplit<Return><C-w>w<Return>:terminal<CR>')
+vim.keymap.set('t', '<C-w>h', "<C-\\><C-n><C-w>h", { silent = true })
 -- Move window
 --vim.keymap.set('n', '<Space>', '<C-w>w')
 --vim.keymap.set('', 'sh', '<C-w>h')

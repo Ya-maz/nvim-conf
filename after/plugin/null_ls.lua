@@ -4,7 +4,7 @@ if (not status) then return end
 null_ls.setup({
     sources = {
         null_ls.builtins.formatting.prettierd,
-        null_ls.builtins.formatting.golines,
+        --null_ls.builtins.formatting.golines,
         --.with({extra_args = { "--single-quote", "--jsx-single-quote"}}),
         null_ls.builtins.diagnostics.fish,
         null_ls.builtins.diagnostics.eslint_d.with({

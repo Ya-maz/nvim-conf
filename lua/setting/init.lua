@@ -2,7 +2,7 @@ require("setting.set")
 require("setting.remap")
 
 -- DO NOT INCLUDE THIS
-vim.opt.rtp:append("~/personal/streamer-tools")
+--vim.opt.rtp:append("~/personal/streamer-tools")
 -- DO NOT INCLUDE THIS
 
 local augroup = vim.api.nvim_create_augroup
@@ -26,7 +26,7 @@ autocmd('TextYankPost', {
     end,
 })
 
-autocmd({"BufWritePre"}, {
+autocmd({ "BufWritePre" }, {
     group = ThePrimeagenGroup,
     pattern = "*",
     command = [[%s/\s\+$//e]],

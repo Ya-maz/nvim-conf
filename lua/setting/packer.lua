@@ -69,9 +69,20 @@ return require('packer').startup(function(use)
     use 'norcalli/nvim-colorizer.lua'
     --blame message - commiter
     use 'f-person/git-blame.nvim'
+
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
     -------------------------------------------------------------------------------
     --go
+    --golang
 
-    use 'ray-x/go.nvim'
-    use 'ray-x/guihua.lua'
+    --   use 'ray-x/go.nvim'
+    --  use 'ray-x/guihua.lua'
 end)
