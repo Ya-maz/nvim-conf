@@ -127,6 +127,15 @@ nvim_lsp.lua_ls.setup {
     },
 }
 
+
+nvim_lsp.stylelint_lsp.setup {
+    settings = {
+        autoFixOnFormat = true,
+        autoFixOnSave = true,
+        validateOnSave = true,
+    }
+}
+
 --nvim_lsp.tailwindcss.setup {
 --  on_attach = on_attach,
 --  capabilities = capabilities

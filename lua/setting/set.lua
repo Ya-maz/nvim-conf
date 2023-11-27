@@ -21,14 +21,15 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
-
+--
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
-
+--
 vim.opt.updatetime = 50
-
+--
 vim.opt.colorcolumn = "80"
-
+--
 --paste clipboard for lixux os
-vim.opt.clipboard:prepend { 'unnamed', 'unnamedplus' }
+--next line break explore mode in thinkpad x390
+--vim.opt.clipboard:prepend { 'unnamed', 'unnamedplus' }
